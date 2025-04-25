@@ -137,8 +137,11 @@ function checkingData(...details) {
       isValid = false;
     }
     else{
-      if(input.id === 'email'){
-        authData(email,phone);
+      if(input.id === 'email' && !authEmail(email)){
+        isValid = false
+      }
+      if(input.id === 'phone-no' && !authPhone(phone)){
+        isValid = false;
       }
     }
   })
@@ -157,23 +160,31 @@ function checkingPlan() {
   return false;
 }
 
-function authData(email,phone){
+function authEmail(email){
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   let emailError = email.parentNode.querySelector('#email-not-valid-error');
-  let phoneError = phone.parentNode.querySelector('#phone-not-valid-error');
   let emailChk = regex.test(email.value.trim());
-  let phoneChk = phone.value.trim().length === 10 ? true : false;
   if(!emailChk){
     emailError.classList.add('error-text--active');
+    return false;
   }
   else{
     emailError.classList.remove('error-text--active');
+    return true;
   }
+
+}
+
+function authPhone(phone){
+  let phoneError = phone.parentNode.querySelector('#phone-not-valid-error');
+  let phoneChk = phone.value.trim().length === 10 ? true : false;
   if(!phoneChk){
     phoneError.classList.add('error-text--active');
+    return false;
   }
   else{
     phoneError.classList.remove('error-text--active');
+    return true;
   }
 }
 
