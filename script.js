@@ -148,7 +148,6 @@ function checkingData(...details) {
 
   return isValid;
 }
-
 //checking plan
 function checkingPlan() {
 
