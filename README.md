@@ -33,18 +33,14 @@ Multi-step navigation with progress indicator
 🚧 Folder Structure
 
 📁 multi-step-form/
-├── index.html
-├── style.css
-├── script.js
-├── assets/
-│   └── (images, icons)
-└── README.md
+<pre lang="markdown"> ```bash 📁 multi-step-form/ ├── index.html ├── style.css ├── script.js ├── assets/ │ └── (images, icons) └── README.md ``` </pre>
+
 🔍 Validation Rules
-Name: Must not be empty
+- Name: Must not be empty
 
-Email: Valid format (e.g., john@example.com)
+- Email: Valid format (e.g., john@example.com)
 
-Phone Number: 10 digits, numeric
+- Phone Number: 10 digits, numeric
 
 Trim: All inputs are trimmed for leading/trailing spaces
 
@@ -57,21 +53,16 @@ git clone https://github.com/yourusername/multi-step-form.git
 cd multi-step-form
 open index.html
 🎨 Customization
-Change form fields in index.html
+- Change form fields in index.html
 
-Update styles in style.css
+- Update styles in style.css
 
-Modify step logic or validation in script.js
+- Modify step logic or validation in script.js
 
 💡 Best Practices
-Use relative paths for assets (./assets/filename)
+- Use relative paths for assets (./assets/filename)
 
-Include any Google Fonts via CDN in HTML
+- Include any Google Fonts via CDN in HTML
 
-Validate all input before moving to next step
+- Validate all input before moving to next step
 
-🙌 Credits
-Developed by Your Name
-
-📄 License
-This project is licensed under the MIT License – see the LICENSE file for details
