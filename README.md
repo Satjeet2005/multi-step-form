@@ -33,7 +33,14 @@ Multi-step navigation with progress indicator
 🚧 Folder Structure
 
 📁 multi-step-form/
-<pre lang="markdown"> ```bash 📁 multi-step-form/ ├── index.html ├── style.css ├── script.js ├── assets/ │ └── (images, icons) └── README.md ``` </pre>
+<pre lang="markdown"> ```bash 
+  📁 multi-step-form/ 
+  ├── index.html 
+  ├── style.css 
+  ├── script.js 
+  ├── assets/ 
+  │ └── (images, icons) 
+  └── README.md ``` </pre>
 
 🔍 Validation Rules
 - Name: Must not be empty
