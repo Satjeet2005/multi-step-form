@@ -52,13 +52,17 @@ Multi-step navigation with progress indicator
 Trim: All inputs are trimmed for leading/trailing spaces
 
 🔗 Deployment
+
 The form is live on GitHub Pages:
 👉 Your GitHub Pages Link
 
 📦 How to Use Locally
+```
 git clone https://github.com/yourusername/multi-step-form.git
 cd multi-step-form
 open index.html
+```
+
 🎨 Customization
 - Change form fields in index.html
 
