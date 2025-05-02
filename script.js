@@ -19,7 +19,6 @@ let summary = {
 
 //some chk bools
 let isMonthly = true;
-let isStep1Success = [];
 let currentStep = 1;
 let isProcessComplete = false;
 
@@ -99,6 +98,7 @@ let sections = document.querySelectorAll('.section');
 sections.forEach(function(s){
   s.addEventListener('click',function(e){
     let goToStep = e.currentTarget.dataset.section;
+    let chk = checkingData(name,email,phone);
     if(isProcessComplete){
       return;
     }
@@ -106,13 +106,19 @@ sections.forEach(function(s){
       step1();
     }
     else if(goToStep == 2){
-      step2();
+      if(chk){
+        step2();
+      }
     }
     else if(goToStep == 3){
-      step3();
+      if(chk){
+        step3();
+      }
     }
     else if(goToStep == 4){
-      step4();
+      if(chk){
+        step4();
+      }
     }
   })
 })
@@ -148,6 +154,7 @@ function checkingData(...details) {
 
   return isValid;
 }
+
 //checking plan
 function checkingPlan() {
 
@@ -210,7 +217,10 @@ function nextButtonFunction(e){
   e.preventDefault();
 
   if(currentStep === 1){
-    step2();
+    let chk = checkingData(name,email,phone);
+    if(chk){
+      step2();
+    }
   }
   else if(currentStep === 2){
     step3();

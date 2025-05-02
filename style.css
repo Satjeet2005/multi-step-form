@@ -56,7 +56,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(assets/images/bg-sidebar-mobile.svg);
+    background-image: url(/assets/images/bg-sidebar-mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -66,7 +66,7 @@ body{
 
 @media screen and (min-width:768px){
     .background-image{
-        background-image: url(assets/images/bg-sidebar-desktop.svg);
+        background-image: url(/assets/images/bg-sidebar-desktop.svg);
         background-size: cover;
         border-radius: inherit;
     }
@@ -213,7 +213,7 @@ body{
 
 .card-content{
     color: var(--card-content-color);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 
@@ -329,6 +329,8 @@ input::placeholder{
     cursor: pointer;
     z-index: 999;
     transition: background-color 0.3s;
+    transition: color 0.3s;
+
 }
 
 .btn--right{
@@ -437,7 +439,7 @@ input::placeholder{
 .plan-heading{
     margin: 0;
     color: var(--card-heading-color);
-    font-weight: 700;
+    font-weight: 500;
     text-transform: capitalize;
     font-size: 17px;
 }
@@ -447,13 +449,13 @@ input::placeholder{
     display: none;
 }
 
+
 .yearly-plan-benefit{
     margin: 0;
     color: var(--card-heading-color);
     font-weight: 500;
     display: none;
     font-size: 14px;
-    transition: display 0.3s;
 }
 
 .plans-container{
@@ -496,6 +498,8 @@ input::placeholder{
     border-radius: 10px;
     cursor: pointer;
     align-items: flex-start;
+    box-sizing: border-box;
+    min-height: 98px;
 }
 
 @media screen and (min-width:768px){
@@ -503,11 +507,16 @@ input::placeholder{
         flex-direction: column;
         gap: 40px;
         width: 100%;
+        min-height: 180px;
+        justify-content: space-between;
     }
 }
 
-.plan:hover{
-    border-color: var(--form-focus-color);
+
+@media screen and (min-width : 768px) {
+    .plan:hover{
+        border-color: var(--form-focus-color);
+    }
 }
 
 
@@ -528,7 +537,7 @@ input::placeholder{
 .add-on-heading{
     margin: 0;
     color: var(--card-heading-color);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 17px;
 }
 
@@ -612,14 +621,14 @@ input::placeholder{
     margin: 0;
     font-size: 17px;
     color: var(--card-heading-color);
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .final-plan-price{
     margin: 0;
     margin-left: auto;
     color: var(--card-heading-color);
-    font-weight: 900;
+    font-weight: 600;
     font-size: 18px;
 }
 
@@ -638,13 +647,13 @@ input::placeholder{
 
 .final-addon-name{
     color: var(--card-content-color);
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
 }
 
 .final-addon-price{
     color: var(--card-heading-color);
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -664,7 +673,7 @@ hr{
 
 .total{
     color: var(--card-content-color);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .total-price{
@@ -700,5 +709,5 @@ hr{
     color: var(--card-content-color);
     font-size: 17px;
     margin-top: 12px;
-    font-weight: 500;
+    font-weight: 400;
 }
