@@ -2,6 +2,7 @@
 A responsive, user-friendly multi-step form built with HTML, CSS, and JavaScript. It includes validation, dynamic error messages, and a seamless user experience across all steps.
 
 📸 Demo
+
 ![Form Preview](assets/designs/desktop-preview.jpg)
 
 
