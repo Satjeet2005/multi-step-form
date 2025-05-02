@@ -11,29 +11,27 @@ A responsive, user-friendly multi-step form built with HTML, CSS, and JavaScript
 🧰 Features
 Multi-step navigation with progress indicator
 
-Real-time input validation
+- Real-time input validation
 
-Error messages and highlighting
+- Error messages and highlighting
 
-Responsive and mobile-first design
+- Responsive and mobile-first design
 
-Trimmed whitespace handling
+- Trimmed whitespace handling
 
-Regex-based validation for email and phone number
+- Regex-based validation for email and phone number
 
-Final review/confirmation step
+- Final review/confirmation step
 
 🛠️ Technologies Used
-HTML5
+- HTML5
 
-CSS3 (Flexbox, Responsive Design)
+- CSS3 (Flexbox, Responsive Design)
 
-JavaScript (ES6+)
+- JavaScript (ES6+)
 
 🚧 Folder Structure
-arduino
-Copy
-Edit
+
 📁 multi-step-form/
 ├── index.html
 ├── style.css
@@ -55,9 +53,6 @@ The form is live on GitHub Pages:
 👉 Your GitHub Pages Link
 
 📦 How to Use Locally
-bash
-Copy
-Edit
 git clone https://github.com/yourusername/multi-step-form.git
 cd multi-step-form
 open index.html
